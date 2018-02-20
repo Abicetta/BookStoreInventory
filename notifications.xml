@@ -1,0 +1,6 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Debugger messages" displayType="TOOL_WINDOW" />
+    <notification groupId="Localization and Internationalization" displayType="NONE" shouldLog="false" />
+  </component>
+</application>
