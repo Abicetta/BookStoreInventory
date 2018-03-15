@@ -1,0 +1,69 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1:2">
+
+    <string name="app_name">Italian Pasta Quiz</string>
+    <string name="description_your_name">To get the test result, enter your name and click submit</string>
+    <string name="multiple_question">Indicate which of the following names are types of pasta</string>
+    <string name="maracas">maracas</string>
+    <string name="sedani">sedani</string>
+    <string name="lumache">lumache</string>
+    <string name="matite">matite</string>
+    <string name="rombi">rombi</string>
+    <string name="description">What kind of pasta is it?</string>
+
+    <!-- text of the first button on the left -->
+    <string name="left_button_text">lasagne</string>
+
+    <!-- text of the first button on the center -->
+    <string name="center_button_text">rigatoni</string>
+
+    <!-- text of the first button on the right -->
+    <string name="right_button_text">gnocchi</string>
+
+    <!-- text of the second button group -->
+    <string name="left_button2">pennoni</string>
+    <string name="center_button2">conchiglie</string>
+    <string name="right_button2">maccheroni</string>
+
+    <!-- text of the third button group -->
+    <string name="left_button3">trofie</string>
+    <string name="center_button3">eliche</string>
+    <string name="right_button3">fusilli</string>
+
+    <!-- text of the fourth button group -->
+    <string name="left_button4">spaghetti</string>
+    <string name="center_button4">bucatini</string>
+    <string name="right_button4">gobbetti</string>
+
+    <!-- text of the fifth button group -->
+    <string name="left_button5">cellentani</string>
+    <string name="center_button5">conchiglie</string>
+    <string name="right_button5">orecchiette</string>
+
+    <!-- text of the sixth button group -->
+    <string name="left_button6">spaghetti</string>
+    <string name="center_button6">tagliatelle</string>
+    <string name="right_button6">ruote</string>
+
+    <!-- text of the number of quiz -->
+    <string name="number_quiz">1 of 5</string>
+
+    <!-- text of the number of next button [CHAR LIMIT=10]-->
+    <string name="submit_button">submit</string>
+
+    <!-- text of the checkbox [CHAR LIMIT=20]-->
+    <string name="ask_email">I want more information about pasta</string>
+
+    <!-- Name is the user's name. [CHAR LIMIT=20] -->
+    <string name="name">Your name: <xliff:g example="Amy" id="name"></xliff:g></string>
+
+    <!-- Strings for toast message -->
+    <string name="hi">"Hi"</string>
+    <string name="you">"You answered correctly "</string>
+    <string name="ofThe">" of the questions, totaling a score of"</string>
+    <string name="points">"points out of 90 total points."</string>
+
+    <!-- message for good result -->
+    <string name="goodRes">You achieved a good result! </string>
+    <string name="badRes">You have not reached a great result!</string>
+
+</resources>

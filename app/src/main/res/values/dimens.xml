@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium">15dp</dimen>
+    <dimen name="almost_medium">9dp</dimen>
+    <dimen name="small">5dp</dimen>
+    <dimen name="w_radio">110dp</dimen>
+</resources>

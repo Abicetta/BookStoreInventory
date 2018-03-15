@@ -1,0 +1,27 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Customizing buttons -->
+    <style name="submitButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#ffa000</item>
+    </style>
+
+    <!-- New text style  -->
+    <style name="TextViewStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextnumberStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TitleStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
+
