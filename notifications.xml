@@ -1,7 +1,0 @@
-<application>
-  <component name="NotificationConfiguration">
-    <notification groupId="Debugger messages" displayType="TOOL_WINDOW" />
-    <notification groupId="Find Problems" displayType="STICKY_BALLOON" />
-    <notification groupId="Localization and Internationalization" displayType="NONE" shouldLog="false" />
-  </component>
-</application>
