@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/padding_small">
+
+    <RelativeLayout
+        android:id="@+id/database_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/rectangle">
+
+        <!-- Title of the book field -->
+        <TextView
+            android:id="@+id/your_text"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/your_data"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/your_book_title"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/title_text" />
+
+        <TextView
+            android:id="@+id/your_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your_text"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_toRightOf="@id/title_text"
+            android:hint="@string/hint_book_title"
+            android:inputType="textMultiLine"
+            android:paddingLeft="@dimen/padding_small" />
+        <!-- Author field -->
+        <TextView
+            android:id="@+id/author_text"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/your_author"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/author_text" />
+
+        <TextView
+            android:id="@+id/your_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your_book_title"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_toRightOf="@id/author_text"
+            android:hint="@string/hint_book_author"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/padding_small" />
+        <!-- ISBN code field -->
+        <TextView
+            android:id="@+id/isbn_text"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/isbn_code"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/isbn_text" />
+
+        <TextView
+            android:id="@+id/isbn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your_author"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_toRightOf="@id/isbn_text"
+            android:hint="@string/hint_isbn"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/padding_small" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/database_info"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/rectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_from_isbn"
+                style="@style/primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_data_by_isbn"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/title_text_isbn"
+                style="@style/primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/title_text" />
+
+            <TextView
+                android:id="@+id/book_title_isbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:hint="@string/hint_book_title"
+                android:inputType="textMultiLine"
+                android:paddingLeft="@dimen/padding_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:orientation="horizontal">
+                <!-- Author field -->
+                <TextView
+                    android:id="@+id/author_text_isbn"
+                    style="@style/primary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author_text" />
+
+                <TextView
+                    android:id="@+id/author_isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:hint="@string/hint_book_author"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/padding_small" />
+            </LinearLayout>
+            <!-- Empty view is only visible when the list has no items. -->
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <!-- Loading indicator is only shown before loading data -->
+            <ProgressBar
+                android:id="@+id/loading_indicator"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_question"
+                style="@style/primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_isbn"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:text="@string/question_text"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:id="@+id/yes_no_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/replace"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height_button"
+                    android:layout_margin="@dimen/padding_small"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/yes" />
+
+                <Button
+                    android:id="@+id/no_replace"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height_button"
+                    android:layout_margin="@dimen/padding_small"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/no" />
+
+            </LinearLayout>
+            <!-- Return Button is only visible when the list has no items. -->
+            <Button
+                android:id="@+id/return_inventory"
+                android:layout_width="@dimen/width"
+                android:layout_height="@dimen/height_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/padding_small"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/return_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
