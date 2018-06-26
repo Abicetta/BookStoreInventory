@@ -7,7 +7,7 @@ In this project, I designed and created the structure of a Inventory App that al
 ## The main screen with the list of all books. 
 The sale button decrement the quantity by one without enter in the editor activity.
 
-![Books list](https://www.abicetta.com/abwp/wp-content/uploads/2018/06/BookStoreInventory04M.png)
+![Books list](https://www.abicetta.com/abwp/wp-content/uploads/2018/06/BookStoreInventory04M2.png)
 
 ## The editor screen
 Where you can insert a new book or edit the data of an existing one.
