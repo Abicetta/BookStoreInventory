@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_background_shape">
+    <stroke
+        android:width="@dimen/stroke_width"
+        android:color="@color/colorAccent" />
+    <padding
+        android:bottom="@dimen/padding_small"
+        android:left="@dimen/padding_small"
+        android:right="@dimen/padding_small"
+        android:top="@dimen/padding_small" />
+    <corners android:radius="@dimen/corners_radius" />
+    <solid android:color="@color/backgroundExtraLight" />
+</shape>

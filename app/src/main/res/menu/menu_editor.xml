@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Options menu for the EditorActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditorActivity">
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/save_disk"
+        android:title="@string/action_save"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_supplier_list"
+        android:title="@string/suppliers"
+        app:showAsAction="never" />
+</menu>

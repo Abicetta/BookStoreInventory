@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/test"
+    android:padding="@dimen/padding_large"
+    tools:context=".EditorActivity">
+    <!-- Input fields -->
+    <!-- Title of the book field -->
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/your_book_title"
+        android:layout_alignParentStart="true"
+        android:text="@string/title_text" />
+
+    <EditText
+        android:id="@+id/your_book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title_text"
+        android:hint="@string/hint_book_title"
+        android:inputType="textMultiLine"
+        android:paddingLeft="@dimen/padding_small" />
+    <!-- Author field -->
+    <TextView
+        android:id="@+id/author_text"
+        style="@style/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/your_author"
+        android:text="@string/author_text" />
+
+    <EditText
+        android:id="@+id/your_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_book_title"
+        android:layout_toRightOf="@id/author_text"
+        android:hint="@string/hint_book_author"
+        android:inputType="textMultiLine"
+        android:paddingLeft="@dimen/padding_small" />
+    <!-- ISBN code field -->
+    <TextView
+        android:id="@+id/isbn_text"
+        style="@style/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/isbn_code"
+        android:text="@string/isbn_text" />
+
+    <EditText
+        android:id="@+id/isbn_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_author"
+        android:layout_toRightOf="@id/isbn_text"
+        android:hint="@string/hint_isbn"
+        android:inputType="textCapWords"
+        android:paddingLeft="@dimen/padding_small" />
+
+    <Button
+        android:id="@+id/check_isbn"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_alignBaseline="@id/isbn_code"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/check_button" />
+    <!-- Price field -->
+    <TextView
+        android:id="@+id/price_text"
+        style="@style/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/edit_price"
+        android:text="@string/price_text" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isbn_code"
+        android:layout_toRightOf="@id/price_text"
+        android:hint="@string/hint_book_price"
+        android:inputType="textCapWords"
+        android:paddingLeft="@dimen/padding_small" />
+    <!-- Quantity field -->
+    <TextView
+        android:id="@+id/quantity_text"
+        style="@style/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/edit_quantity"
+        android:text="@string/quantity_text" />
+
+    <ImageView
+        android:id="@+id/minus_button"
+        android:layout_width="@dimen/icon_button"
+        android:layout_height="@dimen/icon_button"
+        android:layout_below="@id/edit_price"
+        android:layout_margin="@dimen/padding_small"
+        android:layout_toRightOf="@id/quantity_text"
+        android:src="@drawable/icon_minus_52"
+        android:tint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/edit_quantity"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_price"
+        android:layout_toRightOf="@id/minus_button"
+        android:hint="@string/hint_book_quantity"
+        android:inputType="textCapWords"
+        android:paddingLeft="@dimen/padding_small" />
+
+    <ImageView
+        android:id="@+id/plus_button"
+        android:layout_width="@dimen/icon_button"
+        android:layout_height="@dimen/icon_button"
+        android:layout_below="@id/edit_price"
+        android:layout_margin="@dimen/padding_small"
+        android:layout_toRightOf="@id/edit_quantity"
+        android:src="@drawable/icon_plus_52"
+        android:tint="@color/colorAccent" />
+    <!-- supplier rectangle -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_quantity"
+        android:background="@drawable/rectangle"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/supplier_text_name"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_small"
+            android:text="@string/supplier_text" />
+
+        <TextView
+            android:id="@+id/supplier_selected_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/supplier_text_name"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_toRightOf="@id/supplier_text_name"
+            android:paddingTop="@dimen/padding_medium"
+            android:textColor="@color/primaryText" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="@dimen/icon_phone"
+            android:layout_height="@dimen/icon_phone"
+            android:layout_below="@id/supplier_text_name"
+            android:src="@drawable/icon_phone"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/supplier_selected_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/phone_icon"
+            android:layout_below="@id/supplier_text_name"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_toRightOf="@id/phone_icon"
+            android:paddingTop="@dimen/padding_medium"
+            android:textColor="@color/primaryText" />
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_button"
+            android:layout_alignBaseline="@id/supplier_selected_phone"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:text="@string/order_button" />
+        <!-- Label -->
+        <TextView
+            android:id="@+id/text_spinner"
+            style="@style/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_icon"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:text="@string/spinner_label" />
+
+        <Button
+            android:id="@+id/text_new_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_button"
+            android:layout_alignBaseline="@id/text_spinner"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginTop="@dimen/height_button"
+            android:text="@string/add_button" />
+
+        <!-- Supplier drop-down spinner -->
+        <Spinner
+            android:id="@+id/spinner_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_button"
+            android:layout_below="@id/text_spinner"
+            android:paddingRight="@dimen/padding_spinner"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/padding_medium"
+        android:layout_toLeftOf="@id/save"
+        android:src="@drawable/icon_delete_bin"
+        android:tint="@color/backgroundWhite" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/padding_medium"
+        android:src="@drawable/save_disk" />
+</RelativeLayout>
