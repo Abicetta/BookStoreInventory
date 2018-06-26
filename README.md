@@ -1,6 +1,6 @@
 # BookStoreInventory
 Last project for Android Basics Nanodegree by Google. The goal was to design and create the structure of an Inventory App which would allow a store to keep track of its inventory
- Create README.md
+
 
 In this project, I designed and created the structure of a Inventory App that allow a bookstore to keep track of its inventory of products. The app need to store information about the product and allow the user to track sales, check data and make it easy for the user to order more from the listed supplier. I used two tables of database. One to store data of the books and one for suppliers info. 
 
