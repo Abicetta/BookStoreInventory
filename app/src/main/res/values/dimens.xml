@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_large">18dp</dimen>
+    <!-- rectangle -->
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="corners_radius">10dp</dimen>
+    <!-- spinner -->
+    <dimen name="padding_spinner">20dp</dimen>
+    <!-- textview button of activity_editor_suppliers -->
+    <dimen name="width">80dp</dimen>
+    <!-- text dimens -->
+    <dimen name="large_text">18sp</dimen>
+    <dimen name="medium_text">15sp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <!--buttons-->
+    <dimen name="width_button">80dp</dimen>
+    <dimen name="height_button">40dp</dimen>
+    <!--icons-->
+    <dimen name="icon_button">35dp</dimen>
+    <dimen name="icon_phone">20dp</dimen>
+    <!-- empty Shelf -->
+    <dimen name="image_shelf">100dp</dimen>
+
+</resources>

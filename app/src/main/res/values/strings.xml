@@ -1,0 +1,174 @@
+<resources>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">BookStore Inventory</string>
+
+    <!-- strings for the information in the supplier editor [CHAR LIMIT=30] -->
+    <string name="hint_supplier_name">Supplier name</string>
+    <string name="hint_supplier_phone">Supplier Phone</string>
+
+    <!-- strings for the menu_editor -->
+    <string name="action_save">Save</string>
+    <string name="action_home">Home</string>
+    <string name="action_delete">Delete</string>
+    <string name="suppliers">Suppliers list</string>
+
+    <!-- strings for the activity labels -->
+    <string name="editor_label">Editor books</string>
+    <string name="supplier_editor_label">Editor suppliers</string>
+
+    <!-- strings for nav_menu -->
+    <string name="add_supplier">Suppliers List</string>
+    <string name="add_book">Add new</string>
+    <string name="delete_books">Delete all</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+
+    <!-- String for the title of the page -->
+    <string name="suppliers_page">Add or Edit a supplier</string>
+    <string name="editor_page">Add a book</string>
+    <string name="inventory_page">List of all books</string>
+
+    <!-- activity_editor -->
+    <string name="title_text">Title:</string>
+    <string name="author_text">Author:</string>
+    <string name="isbn_text">ISBN code:</string>
+    <string name="check_button">Check</string>
+    <string name="price_text">Price: €</string>
+    <string name="quantity_text">Quantity:</string>
+    <string name="supplier_text">Supplier:</string>
+    <string name="order_button">Call to order</string>
+    <string name="add_button">Or add a new one</string>
+    <!-- spinner -->
+    <string name="spinner_label">SELECT A SUPPLIER</string>
+    <!-- strings for the information in the editor [CHAR LIMIT=30] -->
+    <string name="hint_book_title">Book\'s title</string>
+    <string name="hint_book_author">Author</string>
+    <string name="hint_isbn">ISBN code</string>
+    <string name="hint_book_price">Price</string>
+    <string name="hint_book_quantity">Quantity</string>
+
+    <!-- activity_check_isbn -->
+    <string name="your_data">Your data:</string>
+    <string name="text_data_by_isbn">Data by ISBN with google books: </string>
+    <string name="question_text">Do you want to replace your data with google data?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="return_button">return</string>
+
+    <!-- activity_editor_supplier -->
+    <string name="name">Name:</string>
+    <string name="phone">Phone:</string>
+    <!-- supplier_item -->
+    <string name="name_text">Supplier\'s name:</string>
+
+    <!-- bookProvider -->
+    <string name="null_title">A title is required</string>
+    <string name="valid_price_arg">Book requires valid price</string>
+
+    <!-- Title text for the empty view, which describes the empty bookstore [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a book / supplier [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a book</string>
+    <string name="empty_view_subtitle_text_sup">Get started by adding a supplier</string>
+
+    <!-- Editor title -->
+    <string name="editor_title_add_book">Add a book</string>
+    <string name="editor_title_edit_book">Edit a book</string>
+
+    <!-- Supplier Editor title -->
+    <string name="editor_title_add_supplier">Add a supplier</string>
+    <string name="editor_title_edit_supplier">Edit a supplier</string>
+
+    <!--SupplierListActivity -->
+    <string name="new_supplier">Add a new supplier</string>
+
+    <!-- String for the toast error message [CHAR LIMIT=20] -->
+    <string name="editor_insert_book_failed">Error with saving book</string>
+    <!-- String for the toast success message [CHAR LIMIT=20] -->
+    <string name="editor_insert_book_successful">Book saved.</string>
+    <!-- Toast message in editor when current book was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_successful">Book updated</string>
+    <!-- Toast message in editor when current book has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_failed">Error with updating book</string>
+
+    <!-- supplier editor String for the toast error message [CHAR LIMIT=20] -->
+    <string name="editor_insert_supplier_failed">Error with saving supplier</string>
+    <!-- String for the toast success message [CHAR LIMIT=20] -->
+    <string name="editor_insert_supplier_successful">Supplier saved.</string>
+    <!-- Toast message in editor when current supplier was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_supplier_successful">Supplier updated</string>
+    <!-- Toast message in editor when current supplier has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_supplier_failed">Error with updating supplier</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current book [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>unsaved_changes_dialog_msg
+
+    <!-- Toast message in editor when current book was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this book?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current supplier [CHAR LIMIT=NONE] -->
+    <string name="delete_supplier_dialog_msg">Delete this book?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Dialog message to ask the user to confirm deleting all com.abicetta.bookstoreinventory.books [CHAR LIMIT=NONE] -->
+    <string name="delete_all_dialog_msg">Delete all books?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting all suppliers [CHAR LIMIT=NONE] -->
+    <string name="delete_all_suppliers_dialog_msg">Delete all suppliers?</string>
+
+    <!-- Toast message in editor when current Supplier was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_supplier_successful">Supplier deleted</string>
+
+    <!-- Toast message in editor when current supplier has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_supplier_failed">Error with deleting supplier</string>
+
+    <!-- Toast message in SuppliersListActivity when all suppliers are deleted and in com.abicetta.bookstoreinventory.Books database
+     all suppliers are successfully updated to "Unknown" [CHAR LIMIT=NONE] -->
+    <string name="suppliers_in_books_successful">Suppliers updated to unknown</string>
+    <!-- Toast message in editor when current supplier has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="suppliers_in_books_failed">Error with updating suppliers to unknown</string>
+
+    <!-- Toast message in InventoryActivity when quantity is 0 -->
+    <string name="quantity_zero">There is no book to sell. Call the supplier for an order</string>
+
+    <!-- Toast message in InventoryActivity when quantity is less than 3 -->
+    <string name="quantity_few">There are few copy of this book to sell. Call the supplier for an order</string>
+
+    <!-- Text to display in the activity_check_isbn when there are no data for the selected isbn [CHAR LIMIT=NONE] -->
+    <string name="no_data">No data found.</string>
+    <string name="no_internet">No internet connection</string>
+
+    <!-- Toast message in InventoryActivity when quantity is less than 3 -->
+    <string name="phone_unknown">You have to select a supplier for this book</string>
+
+    <!-- Toast message in EditorActivity when there is no valid data in the  edit text -->
+    <string name="title_unknown">You have to edit the title of the book</string>
+    <string name="author_unknown">You have to edit at least one author of the book</string>
+    <string name="unknown">Unknown</string>
+    <string name="isbn_null">ISBN is null, isbnString is: </string>
+    <string name="isbn_valid">ISBN requires a valid code</string>
+    <string name="isbn_numbers">ISBN code has 10 or 13 char numbers</string>
+    <string name="quantity_valid">Book requires valid quantity</string>
+
+    <!-- Toast message in SupplierEditorActivity when there is no valid data in the  edit text -->
+    <string name="supplier_name">You have to edit the name of the supplier</string>
+    <string name="supplier_phone">You have to edit the phone number of the supplier</string>
+    <string name="valid_phone">Phone requires a valid number</string>
+</resources>
